@@ -1,5 +1,5 @@
 import re
-import secrets
+import secrets #this is more secure and random than importing 'random'
 import string
 
 
@@ -17,7 +17,8 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
         # Generate password
         for _ in range(length):
             password += secrets.choice(all_characters)
-       
+
+        # r before the expression means regex
         constraints = [
             (nums, r'\d'),
             (lowercase, r'[a-z]'),
@@ -36,5 +37,5 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
 
     return password
 
-new_password = generate_password(8, 1, 1, 1, 1)
+new_password = generate_password(8, 1, 1, 1, 1)  #length, nums, lowercase, uppercase, and special characters
 print(new_password)
