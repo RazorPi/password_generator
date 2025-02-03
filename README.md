@@ -6,7 +6,7 @@ Learn Regular Expression by creating a password Generator. This is part of the S
 --------
 **ABOUT:**
 
-This lesson is divided into two different exercises. The first part, or V1, uses a 'for loop' to create a password generator.
+This lesson is divided into two different exercises. The first part, or V1, uses a 'for loop' to create a password generator. [See code here]([url](https://github.com/RazorPi/password_generator/blob/main/password_generator_v1.py))
 
 The second version (V2) uses Regula Expressions (regex) to get the same result and make the code less verbose. 
 
