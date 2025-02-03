@@ -3,7 +3,7 @@ import secrets
 import string
 
 
-def generate_password(length=16, nums=1, special_chars=1, uppercase=1, lowercase=1):
+def generate_password(length=16, nums=1, special_chars=1, uppercase=1, lowercase=1):  #adding values to the arguments here to avoid confusion in line: 39 new_password
 
     # Define the possible characters for the password
     letters = string.ascii_letters
@@ -31,10 +31,10 @@ def generate_password(length=16, nums=1, special_chars=1, uppercase=1, lowercase
             constraint <= len(re.findall(pattern, password))
             for constraint, pattern in constraints
         ):
-            break
+            break #stops the 'for loop'
     
     return password
     
 if __name__ =='__main__':
-    new_password = generate_password()
+    new_password = generate_password()  # all requirements for the password are defined in the main function
     print('Generated password:', new_password)
